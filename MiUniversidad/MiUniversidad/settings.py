@@ -58,7 +58,7 @@ ROOT_URLCONF = 'MiUniversidad.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ BASE_DIR / 'Academica/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

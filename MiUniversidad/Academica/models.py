@@ -62,5 +62,5 @@ class Matricula(models.Model):
             letraSexo = "a"
         else:
             letraSexo = "o"
-        fechaMat = self.fechaMatricula.strftime("%A %d/%m/%Y %H:%M%S")
+        fechaMat = self.fechaMatricula.strftime("%A %d/%m/%Y %H:%M:%S")
         return texto.format(self.estudiante.nombreCompleto(), letraSexo, self.curso, fechaMat)
